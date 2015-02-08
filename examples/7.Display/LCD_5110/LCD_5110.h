@@ -22,6 +22,10 @@
 /// * 		Fonts generated with MikroElektronika GLCD Font Creator 1.2.0.0
 /// @n		http://www.mikroe.com
 ///
+// 2015-02-07 Rei Vilo
+// Pins numbers instead of pins names
+
+
 // Core library - IDE-based
 #if defined(WIRING) // Wiring specific
 #include "Wiring.h"
@@ -61,5 +65,13 @@ private:
     void setXY(uint8_t x, uint8_t y);
     void write(uint8_t dataCommand, uint8_t c);
     uint8_t _font;
+
+    uint8_t _pinReset;
+    uint8_t _pinSerialData;
+    uint8_t _pinBacklight;
+    uint8_t _pinChipSelect;
+    uint8_t _pinDataCommand;
+    uint8_t _pinSerialClock;
+    uint8_t _pinPushButton;
 };
 #endif
